@@ -220,7 +220,7 @@ def format_track_string(ripper, format_string, idx, track):
             num_discs = track_browse.disc
 
     if num_discs >= 2:
-        smart_num = str((int(disc_num) * 100) +str("-")+ int(track_num))
+        smart_num = str((int(disc_num) * 100) + int(track_num))
     else:
         smart_num = track_num
 
