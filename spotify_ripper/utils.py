@@ -222,7 +222,7 @@ def format_track_string(ripper, format_string, idx, track):
     if num_discs >= 2:
         smart_num = str(int(disc_num)) +'-'+ str(int(track_num)).zfill(2)
     else:
-        smart_num = track_num
+        smart_num = str(int(track_num)).zfill(2)
 
     if current_playlist is not None:
         playlist_name = to_ascii(
